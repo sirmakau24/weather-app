@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <header>
+      <h1>Weather App</h1>
+      <p class="subtitle">Type a city and get a quick weather preview (placeholder)</p>
+    </header>
+
+    <form id="weather-form" class="search-form" action="#">
+      <label for="city" class="visually-hidden">City</label>
+      <input id="city" name="city" type="text" placeholder="Enter city (e.g. London)" />
+      <button id="get-weather" type="submit">Get Weather</button>
+    </form>
+
+    <section id="result" class="result" aria-live="polite">
+      <p class="hint">Enter a city and press "Get Weather" to see a placeholder result.</p>
+    </section>
+</main>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
